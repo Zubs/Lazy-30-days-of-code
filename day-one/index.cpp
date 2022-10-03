@@ -1,5 +1,4 @@
 # include <iostream>
-//#include <ctype>
 
 using namespace std;
 
@@ -11,6 +10,7 @@ void BoluOrOdun(string sentence)
             return;
         }
     }
+
     if (sentence.find(" ") != string::npos) cout << "Please remove all spaces or special characters" << endl;
     else if (sentence == "Bolu" || sentence == "Odun") cout << "Welcome back, " << sentence << endl;
     else cout << "It is nice to meet you, " << sentence << endl;
